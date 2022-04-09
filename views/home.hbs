@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<script src='waxjs.js'></script>
+<script src="/js/waxjs.js"></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="http://www.htmlbook.ru/main.css">
+
+{{!--
+<link rel="stylesheet" href="mysite.css"> --}}
+{{!--
+--}}
+
+<style>
+    .container {
+        height: 100vh;
+        background-image: url("/css/fonov.png");
+        padding:0% 10%;
+        background-size: cover;
+
+    }
+
+    #login,
+    #logout {
+        width: 135px;
+        height: 38px;
+        border-radius: 5px;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="center5" style="padding-top: 10%;">
+            <div style="display: flex;justify-content:space-between;">
+                <div>
+                    <p style="color:#ef9d47" id="autologin"></p>
+                    <h1 style="color:white" class="pos">SkyEdge</h1>
+                    <h3 style="color:white" class="pos0">LEVEL: 0</h3>
+                    <h3 style="color:white" class="pos1">TOKEN OIL: 0</h3>
+                    <h3 style="color:white" class="pos2">RESOURCES: 0</h3>
+                </div>
+                <div style="display: flex; flex-direction:column">
+                    <p style="color:#0000CD; text-align:end" class="content1" id="loginresponse"></p>
+                    <button id="login" class="content" onclick=login()>WAX Login</button>
+                    <button id="logout" class="content" style="visibility: hidden;" onclick=logout()>WAX Logout</button>
+                </div>
+            </div>
+            <div>
+                <h2 style="color:white;">Buy resource pack</h2>
+                <p style="color:white;">The smart contract is ready, you can test it, but resources have not been
+                    launched
+                    yet (this is just a test) | Resources is in-game consumables, they are not nft.</p>
+                <button id="sign" onclick=sign()>JUST A TEST</button>
+            </div>
+            <div>
+                {{!-- <code id="response">Inventory --}}
+                    <div id = "maindiv" style="width: 100%!important;margin-top:10px"></div>
+                {{!-- </code> --}}
+            </div>
+
+
+        </div>
+        <div style="display: flex; justify-content:space-between; margin-top:20px">
+            <div style="background-image: url('/css/fight.png'); background-size: cover; width: 172px;">
+                <button style="
+                    margin-top: 86px;
+                    margin-left: 19px;
+                    width: 135px;
+                    height: 38px;
+                    border-radius:5px" onclick="window.location.href = 'fight/';" class="goto">Go to fight</button>
+            </div>
+            <div class="links">
+                <p style="color:white;">SkyEdge official links
+                </p>
+                <p style="color:white;">Collection - https://wax.atomichub.io/explorer/collection/skyedgegamex
+                </p>
+                <p style="color:white;">Site - https://skyedge-official.com
+                </p>
+                <p style="color:white;">Discord - https://discord.gg/uvuPKUknnG
+                </p>
+            </div>
+        </div>
+</body>
+
+
+</html>
